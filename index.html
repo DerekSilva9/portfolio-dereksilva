@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - DerekSilva</title>
+    <title>Portfólio - Derek Silva</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cb471f1943.js" crossorigin="anonymous"></script>
+</head>
 <body>
     <header>
         <nav>
             <h2>Derek<span>Silva</span></h2>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Experiencia</a></li>
-                <li><a href="">Contato</a></li>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Experiencia</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
-    <section class="main">
-        <div class="infos">
-            <div class="welcome">
-                <span class="hand-icon">👋🏻</span>
-                <p>Olá, me chamo</p>
+    <div class="sidebar">
+        <div class="close-btn">&times;</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Experiencia</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="main">
+            <div class="infos">
+                <div class="welcome">
+                    <span class="hand-icon">👋🏻</span>
+                    <p>Olá, me chamo</p>
+                </div>
+                <h1 style="background-image: linear-gradient(to right, #02ff67, #59d88a); background-clip: text; color: transparent;">Derek Silva</h1>
+                <h2 style="color: rgb(20, 226, 99);">Desenvolvedor, Hacker e Bug Hunter</h2>
+                <button>Conheça meu portfólio</button>
             </div>
-            <h1 style="background-image: linear-gradient(to right, #02ff67, #59d88a); background-clip: text; color: transparent;">DerekSilva</h1>
-            <h2 style="color: rgb(20, 226, 99);">Desenvolvedor, Hacker e Bug Hunter|</h2>
-            <button>Conheça meu portfólio</button>
-        </div>
 
-        <div class="image-main">
-            <img src="assets/hacker.png" alt="Imagem de Hacker">
-        </div>
-    </section>
+            <div class="image-main">
+                <img src="assets/hacker.png" alt="Imagem de Hacker">
+            </div>
+        </section>
 
-    <section class="sobre">
-        <div class="img-about">
-            <img src="assets/boneco.png" alt="">
-        </div>
+        <section class="sobre">
+            <div class="img-about">
+                <img src="assets/boneco.png" alt="Imagem de boneco">
+            </div>
 
             <div class="paragrafo-about">
                 <h2>Sobre mim</h2>
@@ -48,93 +64,92 @@
                 </p>
                 <div class="buttons-about">
                     <button>Entrar em contato</button>
-                    <p><a href="">Ver mais &rarr;</a></p>
+                    <p><a href="#">Ver mais &rarr;</a></p>
                 </div>
             </div>
-    </section>
+        </section>
 
-    <section class="habilidades">
-        <h1>Habilidades</h1>
-        <div class="skills-container">
-            <div class="skills-block">
-                <div class="skill">
-                    <li class="fab fa-linux fa-6x"></li>
-                    <label for="li">Linux</label>
+        <section class="habilidades">
+            <h1>Habilidades</h1>
+            <div class="skills-container">
+                <div class="skills-block">
+                    <div class="skill">
+                        <i class="fab fa-linux fa-6x"></i>
+                        <label>Linux</label>
+                    </div>
+                </div>
+
+                <div class="skills-block">
+                    <div class="skill">
+                        <i class="fab fa-html5 fa-6x"></i>
+                        <label>HTML5</label>
+                    </div>
+                </div>
+
+                <div class="skills-block">
+                    <div class="skill">
+                        <i class="fab fa-css3-alt fa-6x"></i>
+                        <label>CSS3</label>
+                    </div>
+                </div>
+
+                <div class="skills-block">
+                    <div class="skill">
+                        <i class="fab fa-git-alt fa-6x"></i>
+                        <label>GIT</label>
+                    </div>
+                </div>
+
+                <div class="skills-block">
+                    <div class="skill">
+                        <i class="fab fa-php fa-6x"></i>
+                        <label>PHP</label>
+                    </div>
+                </div>
+
+                <div class="skills-block">
+                    <div class="skill">
+                        <i class="fab fa-android fa-6x"></i>
+                        <label>Android</label>
+                    </div>
+                </div>
+
+                <div class="skills-block">
+                    <div class="skill">
+                        <i class="fab fa-js fa-6x"></i>
+                        <label>JavaScript</label>
+                    </div>
+                </div>
+
+                <div class="skills-block">
+                    <div class="skill">
+                        <i class="fab fa-expeditedssl fa-6x"></i>
+                        <label>CyberSecurity</label>
+                    </div>
+                </div>
+
+                <div class="skills-block">
+                    <div class="skill">
+                        <i class="fas fa-database fa-6x"></i>
+                        <label>SQL</label>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="skills-block">
-                <div class="skill">
-                    <li class="fab fa-html5 fa-6x"></li>
-                    <label for="li">HTML5</label>
-                </div>
+        <section class="contact">
+            <div class="left-side-contact">
+                <h1>Entre em contato!</h1>
+                <p>Se tiver alguma dúvida ou algum projeto em mente, entre em contato. Irei fazer o possível para ajudar você!</p>
             </div>
 
-            <div class="skills-block">
-                <div class="skill">
-                    <li class="fab fa-css3-alt fa-6x"></li>
-                    <label for="li">CSS3</label>
-                </div>
+            <div class="right-side-image-contact">
+                <img src="assets/contact.png" alt="Imagem de contato">
             </div>
+        </section>
 
-            <div class="skills-block">
-                <div class="skill">
-                    <li class="fab fa-git-alt fa-6x"></li>
-                    <label for="li">GIT</label>
-                </div>
-            </div>
-
-            <div class="skills-block">
-                <div class="skill">
-                    <li class="fab fa-php fa-6x"></li>
-                    <label for="li">PHP</label>
-                </div>
-            </div>
-
-            <div class="skills-block">
-                <div class="skill">
-                    <li class="fab fa-android fa-6x"></li>
-                    <label for="li">Android</label>
-                </div>
-            </div>
-
-            <div class="skills-block">
-                <div class="skill">
-                    <li class="fab fa-js fa-6x"></li>
-                    <label for="li">JavaScript</label>
-                </div>
-            </div>
-
-            <div class="skills-block">
-                <div class="skill">
-                    <li class="fab fa-expeditedssl fa-6x"></li>
-                    <label for="li">CyberSecurity</label>
-                </div>
-            </div>
-
-            <div class="skills-block">
-                <div class="skill">
-                    <li class="fas fa-database fa-6x"></li>
-                    <label for="li">SQL</label>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="contact">
-        <div class="left-side-contact">
-            <h1>Entre em contato!</h1>
-            <p>Se tiver alguma duvida ou algum projeto em mente entre em <br> contato, irei fazer o possivel para ajudar você!</p>
-        </div>
-
-        <div class="right-side-image-contact">
-            <img src="assets/contact.png" alt="">
-        </div>
-    </section>
-
-    <button class="button-contact">Entre em contato</button>
-
-    <script src="https://kit.fontawesome.com/cb471f1943.js" crossorigin="anonymous"></script>
+        <button class="button-contact">Entre em contato</button>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
